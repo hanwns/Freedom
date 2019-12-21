@@ -1,11 +1,15 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>JSFinal</title>
   <script>
     function boxStylist(str){
       var text = str.value;
-      var border_thickness = "Å×µÎ¸®µÎ²²";
-      var border_color = "Å×µÎ¸®»ö";
-      var background = "¹è°æ»ö";
-      var box_text = "ÅØ½ºÆ®";
-      var border_style = "Å×µÎ¸®½ºÅ¸ÀÏ";
+      var border_thickness = "í…Œë‘ë¦¬ë‘ê»˜";
+      var border_color = "í…Œë‘ë¦¬ìƒ‰";
+      var background = "ë°°ê²½ìƒ‰";
+      var box_text = "í…ìŠ¤íŠ¸";
+      var border_style = "í…Œë‘ë¦¬ìŠ¤íƒ€ì¼";
 
       if(border_thickness.test(text) == true) {
         var theBox = document.querySelector('body');
@@ -19,3 +23,10 @@
       }
     }
   </script>
+</head>
+<body>
+  <input type="text" id="text"  onchange="boxStylist(this);"></input>
+  <div></div>
+</body>
+</html>
+
