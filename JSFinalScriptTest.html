@@ -1,0 +1,21 @@
+  <script>
+    function boxStylist(str){
+      var text = str.value;
+      var border_thickness = "테두리두께";
+      var border_color = "테두리색";
+      var background = "배경색";
+      var box_text = "텍스트";
+      var border_style = "테두리스타일";
+
+      if(border_thickness.test(text) == true) {
+        var theBox = document.querySelector('body');
+        var border_thickness_start = text.indexOf(" ");
+        var border_thickness_end = text.indexOf("", border_thickness_start + 1);
+        var border_thickness_string = text.substring(border_thickness_start + 1, border_thickness_end);
+
+        theBox.innerHTML = "<input type=\"text\" id=\"text\"  onchange=\"boxStylist(this);\"></input>
+                            <div style=\" border-width :"+ border_thickness_string +" ></div>" ;
+
+      }
+    }
+  </script>
